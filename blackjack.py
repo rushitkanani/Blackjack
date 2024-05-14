@@ -29,5 +29,9 @@ for i in range(0,2):
 print(user_cards, computer_cards)
 
 
-print(calculate_score(user_cards))
-print(calculate_score(computer_cards))
+if calculate_score(computer_cards)== 21:
+    print("Computer Wins")
+elif calculate_score(user_cards) == 21:
+    print("User Wins")
+elif calculate_score(user_cards) > 21:
+    print("user Lost")
